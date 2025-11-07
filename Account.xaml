@@ -1,0 +1,34 @@
+﻿<Window x:Class="OnewheroBayVMS.Account"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnewheroBayVMS"
+        mc:Ignorable="d"
+        Title="Account" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Background="#EEE" >
+            <TextBlock Text="Account Menu" FontSize="18" FontWeight="Bold" Margin="0,0,0,20"/>
+            <Button Content="Profile" Height="40" Margin="0,0,0,10"/>
+            <Button Content="Settings" Height="40" Margin="0,0,0,10"/>
+            <Button Content="Admin" Height="40" Margin="0,0,0,10"/>
+            <Button Content="Logout" Height="40" Click="OnClickLogout"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="30">
+            <TextBlock Text="Profile" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock Text="Name:" FontSize="16" Margin="0,0,0,10"/>
+            <TextBlock Text="{Binding UserName}" Margin="0,0,0,10"/>
+            <TextBlock Text="Email:" FontSize="16" Margin="0,0,0,10"/>
+            <TextBlock Text="{Binding UserEmail}" Margin="0,0,0,10"/>
+            <TextBlock Text="Phone Number" FontSize="16" Margin="0,0,0,10"/>
+            <TextBlock Text="{Binding UserPhone}" Margin="0,0,0,10"/>
+        </StackPanel>
+        
+
+    </Grid>
+</Window>
