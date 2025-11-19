@@ -161,5 +161,11 @@ namespace OnewheroBayVisitorManagement.Services
         {
             throw new NotImplementedException();
         }
-    }
+
+        internal async Task GetAllAdminsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+    }   
 }

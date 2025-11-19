@@ -39,5 +39,11 @@ namespace OnewheroBayVisitorManagement
             var analyticsWindow = new AnalyticsWindow();
             analyticsWindow.Show();
         }
+
+        private void AdminDashboard_Click(object sender, RoutedEventArgs e)
+        {
+            var adminWindow = new AdminLoginWindow();
+            adminWindow.Show();
+        }
     }
 }

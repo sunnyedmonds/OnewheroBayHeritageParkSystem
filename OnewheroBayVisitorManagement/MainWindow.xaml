@@ -81,7 +81,6 @@
                 </StackPanel>
             </Border>
 
-            <!-- Menu Buttons -->
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -94,135 +93,66 @@
                 </Grid.RowDefinitions>
 
                 <!-- Visitor Management -->
-                <Border Grid.Row="0" Grid.Column="0" 
-                        Background="White" 
-                        CornerRadius="10" 
-                        Margin="10"
-                        BorderBrush="#E0E0E0"
-                        BorderThickness="1">
+                <Border Grid.Row="0" Grid.Column="0" Background="White" CornerRadius="10" Margin="10" BorderBrush="#E0E0E0" BorderThickness="1">
                     <StackPanel VerticalAlignment="Center" Margin="30">
                         <TextBlock Text="👥" FontSize="48" HorizontalAlignment="Center"/>
-                        <TextBlock Text="Visitor Registration" 
-                                   FontSize="20" 
-                                   FontWeight="Bold" 
-                                   HorizontalAlignment="Center"
-                                   Margin="0,10,0,5"/>
-                        <TextBlock Text="Register new visitors and manage visitor information" 
-                                   FontSize="12" 
-                                   Foreground="#666"
-                                   TextWrapping="Wrap"
-                                   TextAlignment="Center"
-                                   Margin="0,0,0,15"/>
-                        <Button Content="Manage Visitors" 
-                                Style="{StaticResource MenuButtonStyle}"
-                                Click="ManageVisitors_Click"/>
+                        <TextBlock Text="Visitor Registration" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,5"/>
+                        <TextBlock Text="Register new visitors and manage visitor information" FontSize="12" Foreground="#666" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15"/>
+                        <Button Content="Manage Visitors" Style="{StaticResource MenuButtonStyle}" Click="ManageVisitors_Click"/>
                     </StackPanel>
                 </Border>
 
                 <!-- Event Management -->
-                <Border Grid.Row="0" Grid.Column="1" 
-                        Background="White" 
-                        CornerRadius="10" 
-                        Margin="10"
-                        BorderBrush="#E0E0E0"
-                        BorderThickness="1">
+                <Border Grid.Row="0" Grid.Column="1" Background="White" CornerRadius="10" Margin="10" BorderBrush="#E0E0E0" BorderThickness="1">
                     <StackPanel VerticalAlignment="Center" Margin="30">
                         <TextBlock Text="🎪" FontSize="48" HorizontalAlignment="Center"/>
-                        <TextBlock Text="Event Management" 
-                                   FontSize="20" 
-                                   FontWeight="Bold" 
-                                   HorizontalAlignment="Center"
-                                   Margin="0,10,0,5"/>
-                        <TextBlock Text="Create and manage special events and exhibitions" 
-                                   FontSize="12" 
-                                   Foreground="#666"
-                                   TextWrapping="Wrap"
-                                   TextAlignment="Center"
-                                   Margin="0,0,0,15"/>
-                        <Button Content="Manage Events" 
-                                Style="{StaticResource MenuButtonStyle}"
-                                Click="ManageEvents_Click"/>
+                        <TextBlock Text="Event Management" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,5"/>
+                        <TextBlock Text="Create and manage special events and exhibitions" FontSize="12" Foreground="#666" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15"/>
+                        <Button Content="Manage Events" Style="{StaticResource MenuButtonStyle}" Click="ManageEvents_Click"/>
                     </StackPanel>
                 </Border>
 
                 <!-- Booking Management -->
-                <Border Grid.Row="1" Grid.Column="0" 
-                        Background="White" 
-                        CornerRadius="10" 
-                        Margin="10"
-                        BorderBrush="#E0E0E0"
-                        BorderThickness="1">
+                <Border Grid.Row="1" Grid.Column="0" Background="White" CornerRadius="10" Margin="10" BorderBrush="#E0E0E0" BorderThickness="1">
                     <StackPanel VerticalAlignment="Center" Margin="30">
                         <TextBlock Text="🎫" FontSize="48" HorizontalAlignment="Center"/>
-                        <TextBlock Text="Booking System" 
-                                   FontSize="20" 
-                                   FontWeight="Bold" 
-                                   HorizontalAlignment="Center"
-                                   Margin="0,10,0,5"/>
-                        <TextBlock Text="Manage event bookings and ticket reservations" 
-                                   FontSize="12" 
-                                   Foreground="#666"
-                                   TextWrapping="Wrap"
-                                   TextAlignment="Center"
-                                   Margin="0,0,0,15"/>
-                        <Button Content="Manage Bookings" 
-                                Style="{StaticResource MenuButtonStyle}"
-                                Click="ManageBookings_Click"/>
+                        <TextBlock Text="Booking System" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,5"/>
+                        <TextBlock Text="Manage event bookings and ticket reservations" FontSize="12" Foreground="#666" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15"/>
+                        <Button Content="Manage Bookings" Style="{StaticResource MenuButtonStyle}" Click="ManageBookings_Click"/>
                     </StackPanel>
                 </Border>
 
                 <!-- Attractions -->
-                <Border Grid.Row="1" Grid.Column="1" 
-                        Background="White" 
-                        CornerRadius="10" 
-                        Margin="10"
-                        BorderBrush="#E0E0E0"
-                        BorderThickness="1">
+                <Border Grid.Row="1" Grid.Column="1" Background="White" CornerRadius="10" Margin="10" BorderBrush="#E0E0E0" BorderThickness="1">
                     <StackPanel VerticalAlignment="Center" Margin="30">
                         <TextBlock Text="🦜" FontSize="48" HorizontalAlignment="Center"/>
-                        <TextBlock Text="Attractions" 
-                                   FontSize="20" 
-                                   FontWeight="Bold" 
-                                   HorizontalAlignment="Center"
-                                   Margin="0,10,0,5"/>
-                        <TextBlock Text="View and manage park attractions and exhibits" 
-                                   FontSize="12" 
-                                   Foreground="#666"
-                                   TextWrapping="Wrap"
-                                   TextAlignment="Center"
-                                   Margin="0,0,0,15"/>
-                        <Button Content="View Attractions" 
-                                Style="{StaticResource MenuButtonStyle}"
-                                Click="ViewAttractions_Click"/>
+                        <TextBlock Text="Attractions" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,5"/>
+                        <TextBlock Text="View and manage park attractions and exhibits" FontSize="12" Foreground="#666" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15"/>
+                        <Button Content="View Attractions" Style="{StaticResource MenuButtonStyle}" Click="ViewAttractions_Click"/>
                     </StackPanel>
                 </Border>
 
                 <!-- Analytics Dashboard -->
-                <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-                        Background="White" 
-                        CornerRadius="10" 
-                        Margin="10"
-                        BorderBrush="#E0E0E0"
-                        BorderThickness="1">
+                <Border Grid.Row="2" Grid.Column="0" Background="White" CornerRadius="10" Margin="10" BorderBrush="#E0E0E0" BorderThickness="1">
                     <StackPanel VerticalAlignment="Center" Margin="30">
                         <TextBlock Text="📊" FontSize="48" HorizontalAlignment="Center"/>
-                        <TextBlock Text="Analytics &amp; Reports"
-                                   FontSize="20" 
-                                   FontWeight="Bold" 
-                                   HorizontalAlignment="Center"
-                                   Margin="0,10,0,5"/>
-                        <TextBlock Text="View visitor statistics, demographics, and event performance" 
-                                   FontSize="12" 
-                                   Foreground="#666"
-                                   TextWrapping="Wrap"
-                                   TextAlignment="Center"
-                                   Margin="0,0,0,15"/>
-                        <Button Content="View Analytics" 
-                                Style="{StaticResource MenuButtonStyle}"
-                                Click="ViewAnalytics_Click"/>
+                        <TextBlock Text="Analytics &amp; Reports" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,5"/>
+                        <TextBlock Text="View visitor statistics, demographics, and event performance" FontSize="12" Foreground="#666" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15"/>
+                        <Button Content="View Analytics" Style="{StaticResource MenuButtonStyle}" Click="ViewAnalytics_Click"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Settings -->
+                <Border Grid.Row="2" Grid.Column="1" Background="White" CornerRadius="10" Margin="10" BorderBrush="#E0E0E0" BorderThickness="1">
+                    <StackPanel VerticalAlignment="Center" Margin="30">
+                        <TextBlock Text="⚙️" FontSize="48" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Admin Dashboard" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,5"/>
+                        <TextBlock Text="View Dashboard" FontSize="12" Foreground="#666" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,15"/>
+                        <Button Content="System Settings" Style="{StaticResource MenuButtonStyle}" Click="AdminDashboard_Click"/>
                     </StackPanel>
                 </Border>
             </Grid>
+
         </Grid>
     </Grid>
 </Window>
